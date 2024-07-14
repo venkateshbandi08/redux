@@ -1,0 +1,21 @@
+.todos-container {
+  width: 70%;
+}
+.each-todo-container {
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+.buttons-container {
+  display: flex;
+  gap: 1rem;
+}
+.complete {
+  text-decoration: line-through;
+}

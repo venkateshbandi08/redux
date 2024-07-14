@@ -1,0 +1,20 @@
+1. Create Store
+    - creat store using "configureStore" from @reduxjs/toolkit
+    - export the store
+2. Wrap the entire app with the Provider
+    - wrap with "Provider" from @reduxjs/toolkit
+    - and give a store value as store={store}
+3. Defining Slicers
+    - Declare the Initial state on how the data should be managed/stored
+    - create a slice using the "CreateSlice" from @reduxjs/toolkit and export it
+    - fill the slice object with the :
+        - name,
+        - initial state,
+        - reducers object with the number of actions to be performed as an object
+    - we can use "nanoid" from @reduxjs/toolkit which works same as uuid
+    - export slicerName.reducer, where this will be used in store
+4. Performing actions on the state
+    - by using "useDispatch" from react-redux, we can perform the declared list of operations
+      that we initialised in the slicer object
+5. Accessing / extracting the stored data from store/state
+    - by using "useSelector" from react-redux, we can get the data that we have stored in the store/state.
